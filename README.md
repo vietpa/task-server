@@ -32,6 +32,14 @@
 $ npm install
 ```
 
+## Database
+
+Postgresql
+
+## Generate schema
+
+npx prisma migrate dev --name init
+
 ## Running the app
 
 ```bash
@@ -57,17 +65,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## APIs
-
-[http://localhost:3000/servers](http://localhost:3000/servers)\
-Return an online server which is lowest priority.\
-\
-[http://localhost:3000/recipes](http://localhost:3000/recipes)\
-Return all recipes\
-\
-[http://localhost:3000/recipes/:uuid](http://localhost:3000/recipes/e6279fe1-97a7-467f-838d-e6add2f98677)\
-Return a recipe\
-\
-[http://localhost:3000/recipes/cooking/:uuid](http://localhost:3000/recipes/e6279fe1-97a7-467f-838d-e6add2f98677)\
-Return cooking information of specific recipe
